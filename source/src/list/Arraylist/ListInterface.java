@@ -1,6 +1,7 @@
 package list.Arraylist;
 
 public interface ListInterface<E> {
+
     public void add(int i , E x);
     public void append(E x);
     public E remove(int i);
