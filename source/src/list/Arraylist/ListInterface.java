@@ -11,4 +11,5 @@ public interface ListInterface<E> {
     public int len();
     public boolean isEmpty();
     public void clear();
+
 }
