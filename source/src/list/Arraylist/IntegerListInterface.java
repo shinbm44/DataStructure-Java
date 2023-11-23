@@ -1,6 +1,7 @@
 package list.Arraylist;
 
 public interface IntegerListInterface {
+
     public void add(int i, Integer x);
     public void append(Integer x);
     public Integer remove(int i);
@@ -11,4 +12,5 @@ public interface IntegerListInterface {
     public int len();
     public boolean isEmpty();
     public void clear();
+
 }

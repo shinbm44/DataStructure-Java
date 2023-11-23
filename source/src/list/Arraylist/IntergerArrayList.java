@@ -75,7 +75,8 @@ public class IntergerArrayList implements IntegerListInterface{
 
     // [알고리즘 5-5] 구현: 배열 리스트의 i번째 원소 알려주기
     @Override
-    public Integer get(int index) {
+    public Integer
+    get(int index) {
         if(index >= 0 && index <= numItems )
             return item[index];
         else return null;
