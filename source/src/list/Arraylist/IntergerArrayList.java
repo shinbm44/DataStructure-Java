@@ -1,7 +1,6 @@
 package list.Arraylist;
 
 public class IntergerArrayList implements IntegerListInterface{
-
     private Integer [] item;
     private int numItems;
     private static final int DEFAULT_CAPACITY = 64;
