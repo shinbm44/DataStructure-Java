@@ -9,8 +9,7 @@ public class InheritedStack<E> extends LinkedList<E> implements StackInterface<E
     }
 
     @Override
-    public void push(E newItem) {
-        add(0, newItem);
+    public void push(E newItem) { add(0, newItem);
     }
 
     @Override

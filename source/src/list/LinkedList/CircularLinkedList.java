@@ -13,6 +13,7 @@ public class CircularLinkedList<E> implements ListInterface<E> {
         tail.next = tail;
     }
 
+    // 특정 인덱스에 데이터 추가
     @Override
     public void add(int index, E x) {
         if ( index >= 0 && index <= numItems) {
@@ -26,6 +27,7 @@ public class CircularLinkedList<E> implements ListInterface<E> {
         }
     }
 
+    // 맨 뒤에 데이터 추가
     @Override
     public void append(E x) {
         Node <E> prevNode = tail;
@@ -35,6 +37,7 @@ public class CircularLinkedList<E> implements ListInterface<E> {
         numItems++;
     }
 
+    // 특정 인덱스의 데이터 지우기
     @Override
     public E remove(int index) {
         if (index >=0 && index <= numItems -1) {
@@ -51,6 +54,7 @@ public class CircularLinkedList<E> implements ListInterface<E> {
         return null;
     }
 
+    // 특정 값을 지닌 인덱스의 노드 지우기
     @Override
     public boolean removeItem(E X) {
         Node <E> currNode = tail.next;
@@ -68,7 +72,7 @@ public class CircularLinkedList<E> implements ListInterface<E> {
         return false;
     }
 
-    // [알고리즘 5-13] 구현: 연결 리스트의 k번째 원소 알려주기
+    // 연결 리스트의 k번째 원소 알려주기
     @Override
     public E get(int index) {
         if(index >= 0 && index < numItems ) {
@@ -76,6 +80,7 @@ public class CircularLinkedList<E> implements ListInterface<E> {
         }
         return null;
     }
+
 
     private Node<E> getNode(int index) {
         if (index >= -1 && index <= numItems){
@@ -88,6 +93,7 @@ public class CircularLinkedList<E> implements ListInterface<E> {
         return null;
     }
 
+    // 특정 인덱스의 값을 바꾸기
     @Override
     public void set(int index, E x) {
         if( index >= 0 && index <= numItems-1 ){
@@ -97,6 +103,7 @@ public class CircularLinkedList<E> implements ListInterface<E> {
         }
     }
 
+    // 특정 값을 지닌 인덱스 값 알려주기
     public final int NOT_FOUND = -12345;
 
     @Override
