@@ -1,6 +1,6 @@
 package BST;
 
-public interface indexInterface <T>{
+public interface IndexInterface<T>{
     public T search(Comparable x);
     public void insert(Comparable x);
     public void delete(Comparable x);
